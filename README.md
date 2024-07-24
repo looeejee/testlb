@@ -1,3 +1,3 @@
 # Hello, this is a test
 
-Empty repository. Testing connectivity and GitHub features. Please ignore.
+Hello, this is an empty repository. Testing connectivity and GitHub features. Please ignore.
