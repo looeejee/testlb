@@ -15,13 +15,14 @@ jobs:
         with:
           sparse-checkout-cone-mode: 'false'
           sparse-checkout: |
-            ./testsub1/testsub2/script.sh
+            testsub1/testsub2/
+          path: .
 
       - name: List files and CHMOD
         run: |
           pwd
           ls -la
-          chmod +x ./script.sh
+          # chmod +x ./script.sh
 
       - name: Run script
         run: |
