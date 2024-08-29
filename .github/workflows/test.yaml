@@ -22,7 +22,8 @@ jobs:
         run: |
           pwd
           ls -la
-          # chmod +x ./script.sh
+          cd testsub1/testsub2
+          chmod +x ./script.sh
 
       - name: Run script
         run: |
