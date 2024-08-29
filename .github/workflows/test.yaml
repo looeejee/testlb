@@ -1,0 +1,26 @@
+name: CheckOut Subfoler and run script
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  job_1:
+    runs-on: linux
+    steps:
+      - name: ChecOut Repo
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            ./testsub1/testsub2
+
+      - name: List files and CHMOD
+        run: |
+          ls -la
+          chmod +x ./script.sh
+
+      - name: Run script
+        run: |
+          ./script.sh
