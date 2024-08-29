@@ -13,10 +13,9 @@ jobs:
       - name: ChecOut Repo
         uses: actions/checkout@v4
         with:
-          sparse-checkout-cone-mode: 'true'
+          sparse-checkout-cone-mode: 'false'
           sparse-checkout: |
-            testsub1/testsub2/
-          path: .
+            ./testsub1/testsub2/
 
       - name: List files and CHMOD
         run: |
