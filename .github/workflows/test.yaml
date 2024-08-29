@@ -27,4 +27,5 @@ jobs:
 
       - name: Run script
         run: |
+          cd testsub1/testsub2
           ./script.sh
