@@ -16,6 +16,7 @@ jobs:
           sparse-checkout-cone-mode: 'false'
           sparse-checkout: |
             testsub1/testsub2/script.sh
+          path: .
 
       - name: List files and CHMOD
         run: |
