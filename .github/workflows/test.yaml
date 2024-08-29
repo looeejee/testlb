@@ -8,7 +8,7 @@ on:
 
 jobs:
   job_1:
-    runs-on: linux
+    runs-on: ubuntu-latest
     steps:
       - name: ChecOut Repo
         uses: actions/checkout@v4
