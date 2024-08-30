@@ -24,6 +24,7 @@ jobs:
           ls -la
           cd testsub1/testsub2
           chmod +x ./script.sh
+          echo "::add-mask::CIAO!"
 
       - name: Run script
         run: |
